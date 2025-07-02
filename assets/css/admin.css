@@ -1,0 +1,121 @@
+/**
+ * Admin styles for Investing Live Currency plugin
+ */
+
+.currency-pairs-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 10px;
+	max-height: 400px;
+	overflow-y: auto;
+	border: 1px solid #ddd;
+	padding: 15px;
+	border-radius: 4px;
+	background: #fff;
+}
+
+.currency-pairs-grid label {
+	display: flex;
+	align-items: center;
+	padding: 8px 12px;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+	background: #f9f9f9;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	font-size: 13px;
+}
+
+.currency-pairs-grid label:hover {
+	background: #f0f0f0;
+	border-color: #0073aa;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.currency-pairs-grid label input[type="checkbox"] {
+	margin-right: 8px;
+	margin-top: 0;
+}
+
+.currency-pairs-grid label input[type="checkbox"]:checked + span {
+	font-weight: 600;
+	color: #0073aa;
+}
+
+.currency-pairs-grid label:has(input[type="checkbox"]:checked) {
+	background: #e7f3ff;
+	border-color: #0073aa;
+}
+
+/* Responsive adjustments */
+@media (max-width: 782px) {
+	.currency-pairs-grid {
+		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+		gap: 8px;
+		padding: 10px;
+	}
+	
+	.currency-pairs-grid label {
+		padding: 6px 8px;
+		font-size: 12px;
+	}
+}
+
+/* Search and action buttons */
+.currency-search-wrapper input {
+	width: 100%;
+	padding: 8px 12px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
+	transition: border-color 0.2s ease;
+}
+
+.currency-search-wrapper input:focus {
+	border-color: #0073aa;
+	outline: none;
+	box-shadow: 0 0 0 1px #0073aa;
+}
+
+.currency-actions {
+	margin-bottom: 15px;
+}
+
+.currency-actions .button {
+	margin-right: 10px;
+}
+
+.currency-actions .button:last-child {
+	margin-right: 0;
+}
+
+/* No results message */
+.no-results {
+	grid-column: 1 / -1;
+	text-align: center;
+	padding: 20px;
+	color: #666;
+	font-style: italic;
+	background: #f9f9f9;
+	border: 1px dashed #ddd;
+	border-radius: 4px;
+}
+
+/* Scrollbar styling */
+.currency-pairs-grid::-webkit-scrollbar {
+	width: 8px;
+}
+
+.currency-pairs-grid::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	border-radius: 4px;
+}
+
+.currency-pairs-grid::-webkit-scrollbar-thumb {
+	background: #c1c1c1;
+	border-radius: 4px;
+}
+
+.currency-pairs-grid::-webkit-scrollbar-thumb:hover {
+	background: #a8a8a8;
+} 

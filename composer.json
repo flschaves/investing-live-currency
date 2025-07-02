@@ -1,0 +1,9 @@
+{
+	"name": "flschaves/investing-live-currency",
+	"description": "Live currency widget for WordPress admin dashboard",
+	"autoload": {
+		"psr-4": {
+			"InvestingLiveCurrency\\": "app/"
+		}
+	}
+} 
