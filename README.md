@@ -7,7 +7,6 @@ A WordPress plugin that adds a live currency widget to the WordPress admin dashb
 - Live currency rates widget in WordPress admin dashboard
 - Customizable theme (Light/Dark)
 - Configurable currency pairs
-- Adjustable display columns
 - Settings page under Settings > Investing Live Currency
 
 ## Installation
@@ -20,13 +19,9 @@ A WordPress plugin that adds a live currency widget to the WordPress admin dashb
 
 ### Widget Theme
 - **Color Theme**: Choose between Light and Dark themes
-- **Round Corners**: Enable/disable rounded corners
-- **Show Title**: Show/hide widget title
 
 ### Currencies
-Select which currency pairs to display in the widget. Currently includes:
-- EUR/USD (ID: 1617)
-- GBP/USD (ID: 2103)
+Select which currency pairs to display in the widget.
 
 ### Columns to Show
 Choose which columns to display:
